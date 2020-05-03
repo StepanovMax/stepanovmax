@@ -1,4 +1,5 @@
 const path = require('path');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -17,8 +18,22 @@ module.exports = {
         options: {
           presets: ['env']
         }
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader'
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'vue-style-loader',
+          'css-loader'
+        ]
       }
     ]
+  },
+  resolve: {
+    extensions: ['*', '.js', '.vue', '.json']
   },
   devtool: 'source-map',
   devServer: {
@@ -26,4 +41,12 @@ module.exports = {
     port: 9000
   },
   watch: true,
+  plugins: [
+    new VueLoaderPlugin()
+  ],
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
+    }
+  }
 }
