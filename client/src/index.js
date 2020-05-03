@@ -10,12 +10,8 @@ Vue.use(Router)
 Vue.config.productionTip = false;
 
 const router = new Router({
-<<<<<<< HEAD
- routes: [
-=======
   mode: 'history',
   routes: [
->>>>>>> Add routing
     {
       path: '/',
       name:'home',
