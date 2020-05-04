@@ -4,13 +4,13 @@ import Router from 'vue-router';
 import App from './App.vue';
 import Home from './components/Home.vue'
 import Blog from './components/Blog.vue'
+import Admin from './components/Admin.vue'
 
 Vue.use(Router)
 
 Vue.config.productionTip = false;
 
 const router = new Router({
-  mode: 'history',
   routes: [
     {
       path: '/',
@@ -21,6 +21,11 @@ const router = new Router({
       path: '/blog',
       name:'blog',
       component: Blog
+    },
+    {
+      path: '/getoutofhere',
+      name:'admin',
+      component: Admin
     }
   ]
 });
