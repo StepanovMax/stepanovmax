@@ -5,6 +5,8 @@ import App from './App.vue';
 import Home from './components/home.vue'
 import Blog from './components/blog.vue'
 
+import './scss/index.scss'
+
 Vue.use(Router)
 
 Vue.config.productionTip = false;

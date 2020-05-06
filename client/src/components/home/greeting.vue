@@ -21,11 +21,12 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .greeting {
   text-align: left;
-}
-.greeting__h1 {
-  color: blue;
+
+  &__h1 {
+    color: blue;
+  }
 }
 </style>
