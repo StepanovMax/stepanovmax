@@ -38,7 +38,8 @@ module.exports = {
   devtool: 'source-map',
   devServer: {
     contentBase: path.join(__dirname),
-    port: 9000
+    port: 9000,
+    historyApiFallback: true
   },
   watch: true,
   plugins: [

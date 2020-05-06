@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "no",
   "main": "index.js",
-  "author": "stepanovmax",
+  "author": "Stepanov Max",
+  "repository": "https://github.com/stepanovmax/stepanovmax",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -25,6 +26,8 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
+    "connect-history-api-fallback": "^1.6.0",
+    "express": "^4.17.1",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"
   }

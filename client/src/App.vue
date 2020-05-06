@@ -1,29 +1,18 @@
 <template>
   <div id="app">
-    <ul>
-      <li>
-        <router-link :to="{ name: 'home' }">
-          Home
-        </router-link>
-       </li>
-      <li>
-        <router-link :to="{ name: 'blog' }">
-          Blog
-        </router-link>
-      </li>
-      <li>
-        <router-link :to="{ name: 'admin' }">
-          Admin
-        </router-link>
-      </li>
-    </ul>
+    <Header />
     <router-view class="view"></router-view>
   </div>
 </template>
 
 <script>
+import Header from './components/header.vue'
+
 export default {
   name: 'App',
+  components: {
+    Header
+  },
 };
 </script>
 
