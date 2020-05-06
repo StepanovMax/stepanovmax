@@ -1,11 +1,11 @@
 <template>
-  <ul>
-    <li>
+  <ul class="menu">
+    <li class="menu__item">
       <router-link :to="{ name: 'home' }">
         Home
       </router-link>
     </li>
-    <li>
+    <li class="menu__item">
       <router-link :to="{ name: 'blog' }">
         Blog
       </router-link>

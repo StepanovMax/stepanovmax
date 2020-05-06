@@ -1,5 +1,8 @@
 <template>
-  <header id="header">
+  <header
+    id="header"
+    class="header"
+  >
     <Logo />
     <Menu />
   </header>
