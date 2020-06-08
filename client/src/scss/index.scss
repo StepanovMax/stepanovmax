@@ -1,12 +1,21 @@
-@import "variables.scss";
+// Reset styles
+
 
 // Styleguide
+@import "./styleguide/variables.scss";
 @import "./styleguide/container.scss";
-@import "./styleguide/app.scss";
 @import "./styleguide/list.scss";
 @import "./styleguide/header.scss";
+@import "./styleguide/content.scss";
+@import "./styleguide/button.scss";
+@import "./styleguide/paragraph.scss";
+@import "./styleguide/title.scss";
+@import "./styleguide/image.scss";
 
 // Blocks
 @import "./blocks/menu.scss";
 
 // Components
+@import "./components/app.scss";
+@import "./components/logo.scss";
+@import "./components/greeting.scss";

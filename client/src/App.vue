@@ -4,7 +4,7 @@
     class="app"
   >
     <Header />
-    <router-view class="view"></router-view>
+    <router-view class="content"></router-view>
   </div>
 </template>
 
