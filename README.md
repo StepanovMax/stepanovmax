@@ -3,4 +3,4 @@
 ### Best skills
 
 * Vue.js
-* Wordpress
+* Nuxt.js
